@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800&display=swap');
 
-
 :root {
-    /* Primary Colours */
     --light-red: hsl(0, 100%, 67%);
     --bg-light-red: hsl(0, 100%, 96%);
     --orangey-yellow: hsl(39, 100%, 56%);
@@ -11,20 +9,14 @@
     --bg-green-teal: hsl(166, 100%, 96%);
     --cobalt-blue: hsl(234, 85%, 45%);
     --bg-cobalt-blue: hsl(234, 85%, 96%);
-
-    /* Gradients */
     --bg-slate-blue: hsl(252, 100%, 67%);
     --bg-royal-blue: hsl(241, 81%, 54%);
     --violet-blue: hsla(256, 72%, 46%, 1);
     --persian-blue: hsla(241, 72%, 46%, 0);
-
-    /* Neutral */
     --white: hsl(0, 0%, 100%);
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --grey-blue: hsl(224, 30%, 27%);
-
-    /* Typography */
     --main-font: 'Hanken Grotesk', sans-serif;
     --sub-font: 'Bebas Neue', cursive;
     --aux-font: 'Bangers', cursive;
@@ -43,7 +35,6 @@ p {
     padding: 0;
 }
 
-/* Global Styles */
 body {
     display: flex;
     justify-content: center;
@@ -58,8 +49,6 @@ main {
     box-shadow: 5px 5px 50px var(--bg-cobalt-blue);
     border-radius: 20px;
 }
-
-/* Results */
 
 .result {
     display: inherit;
@@ -102,7 +91,7 @@ article p {
     font-size: 18px;
     font-weight: 700;
     color: var(--light-lavender);
-    opacity: 0.4
+    opacity: 0.4;
 }
 
 .result-info {
@@ -123,7 +112,6 @@ article p {
     opacity: 0.9;
 }
 
-/* Summary */
 .summary {
     display: inherit;
     flex-direction: column;
@@ -139,7 +127,7 @@ article p {
     text-align: left;
     font-size: 26px;
     font-weight: 500;
-    margin: 0;
+    text-align: center;
     padding: 5px 0;
     color: var(--grey-blue);
 }
@@ -155,30 +143,33 @@ article p {
     border-radius: 6px;
     background: white;
 }
+
 .detail {
     display: flex;
-    align-items: cemter;
+    align-items: center;
     gap: 10px;
 }
-.info-box
-img {
+
+.info-box img {
     height: 30px;
 }
-.info-box
-h2 {
+
+.info-box h2 {
     font-size: 20px;
     font-weight: 500;
 }
-.info-box
-p {
+
+.info-box p {
     font-size: 18px;
     font-weight: 800;
     color: var(--grey-blue);
 }
+
 .info-box span {
     color: var(--grey-blue);
     opacity: 0.4;
 }
+
 .summary button {
     height: 50px;
     width: 240px;
@@ -190,27 +181,32 @@ p {
     font-size: 18px;
     font-weight: 600;
 }
+
 .summary button:hover {
     background: var(--bg-slate-blue);
 }
+
 .reaction {
     background: var(--bg-light-red);
     color: var(--light-red);
 }
+
 .memory {
     background: var(--bg-orangey-yellow);
     color: var(--orangey-yellow);
 }
+
 .verbal {
     background: var(--bg-green-teal);
     color: var(--green-teal);
 }
+
 .visual {
     background: var(--bg-cobalt-blue);
     color: var(--cobalt-blue);
-
 }
-footer {
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -221,92 +217,88 @@ footer {
     background: var(--bg-green-teal);
     border-radius: 6%;
 }
-footer
-h1 {
+
+footer h1 {
     color: var(--grey-blue);
     font-size: 18px;
     font-weight: 500;
     padding: 10px;
 }
 
-/* ### Notes
+@media screen and (max-width:820px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
-Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: none;
+        gap: 10px;
+        margin: 0 0 10px 0;
+    }
 
-@media screen and (max-width: 820px) {
-  /* Your CSS rules for devices with a maximum width of 768px go here */
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  
-    align-items: center;  
-    box-shadow: none;
-    gap: 10px;
-    margin: 0 0 10px 0;
-  }
-  /* Result */
-  .result {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    height: 50vh;
-    width: 100vw;
-  }
-  .result 
-  h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  .result
-  article 
-  p {
-    font-size: 18px;
-  }
-  .result-info {
-    width: 60vw;
-  }
-  .result-info
-  p {
-    font-size: 15px;
-  }
+    .result {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        height: 50vh;
+        width: 100vw;
+    }
 
-  /* Summary */
-  .summary {
-    height: 50vh;
-    width: 90vw;
-  }
-  .summary
-  h1 {
-    text-align: center;
-    font-size: 22px;;
-  }
-  /* Info Box Mobile */
-  .info-box {
-    height: 50px;
-  }
-  .info-box
-  img {
-    height: 22px;
-  }
-  .info-box 
-  h2 {
-    font-size: 16px;
-  }
-  .info-box 
-  p {
-    font-size: 16px;
-  }
-  .summary button {
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    height: 50px;
-    width: 70vw;
-  }
+    .result h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .result article p {
+        font-size: 18px;
+    }
+
+    .result-info {
+        width: 60vw;
+    }
+
+    .result-info p {
+        font-size: 15px;
+    }
+
+    .summary {
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .summary h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .info-box {
+        height: 50px;
+    }
+
+    .info-box img {
+        height: 22px;
+    }
+
+    .info-box h2 {
+        font-size: 16px;
+    }
+
+    .info-box p {
+        font-size: 16px;
+    }
+
+    .summary button {
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        height: 50px;
+        width: 70vw;
+    }
 }
