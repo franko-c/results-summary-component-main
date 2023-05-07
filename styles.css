@@ -34,6 +34,7 @@ html,
 body,
 section,
 div,
+footer,
 h1,
 h2,
 h3,
@@ -52,9 +53,9 @@ body {
 }
 
 main {
-    max-width: 600px;
+    max-width: 1440px;
     display: flex;
-    box-shadow: 5px 5px 5px var(--bg-cobalt-blue);
+    box-shadow: 5px 5px 50px var(--bg-cobalt-blue);
     border-radius: 20px;
 }
 
@@ -65,15 +66,15 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 380px;
-    width: 280px;
+    height: 500px;
+    width: 420px;
     background: linear-gradient(var(--bg-slate-blue) 00%, var(--bg-royal-blue) 100%);
     border-radius: 6%;
 }
 
 .result h1 {
     color: var(--light-lavender);
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 600;
 }
 
@@ -98,26 +99,26 @@ article h2 {
 article p {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--light-lavender);
     opacity: 0.4
 }
 
 .result-info {
-    width: 190px;
+    width: 300px;
     margin: 0 auto;
 }
 
 .result-info h3 {
-    font-size: 23px;
+    font-size: 26px;
     letter-spacing: 0.6px;
     color: var(--white);
     margin: 0 0 10px 0;
 }
 
 .result-info p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--light-lavender);
     opacity: 0.9;
 }
@@ -128,17 +129,18 @@ article p {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 380px;
-    width: 280px;
+    height: 500px;
+    width: 420px;
     padding: 0px;
-    background: white;
+    background: var(--white);
 }
 
 .summary h1 {
     text-align: left;
-    font-size: 17px;
+    font-size: 26px;
     font-weight: 500;
-    margin: 0 0 0 20px;
+    margin: 0;
+    padding: 5px 0;
     color: var(--grey-blue);
 }
 
@@ -147,25 +149,29 @@ article p {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 10px auto;
-    height: 45px;
-    width: 80%;
+    height: 64px;
+    width: 75%;
     padding: 0 12px;
     border-radius: 6px;
     background: white;
 }
+.detail {
+    display: flex;
+    align-items: cemter;
+    gap: 10px;
+}
 .info-box
 img {
-    height: 16px
+    height: 30px;
 }
 .info-box
 h2 {
-    margin-left: -90px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
 }
 .info-box
 p {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 800;
     color: var(--grey-blue);
 }
@@ -174,13 +180,18 @@ p {
     opacity: 0.4;
 }
 .summary button {
-    height: 43px;
-    width: 200px;
+    height: 50px;
+    width: 240px;
     color: var(--white);
     background: var(--grey-blue);
     border: 1px solid navy;
     border-radius: 20px;
     margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+.summary button:hover {
+    background: var(--bg-slate-blue);
 }
 .reaction {
     background: var(--bg-light-red);
@@ -199,7 +210,103 @@ p {
     color: var(--cobalt-blue);
 
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 380px;
+    width: 280px;
+    padding: 0;
+    background: var(--bg-green-teal);
+    border-radius: 6%;
+}
+footer
+h1 {
+    color: var(--grey-blue);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
 
 /* ### Notes
 
-Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+
+@media screen and (max-width: 820px) {
+  /* Your CSS rules for devices with a maximum width of 768px go here */
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: center;  
+    box-shadow: none;
+    gap: 10px;
+    margin: 0 0 10px 0;
+  }
+  /* Result */
+  .result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 50vh;
+    width: 100vw;
+  }
+  .result 
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .result
+  article 
+  p {
+    font-size: 18px;
+  }
+  .result-info {
+    width: 60vw;
+  }
+  .result-info
+  p {
+    font-size: 15px;
+  }
+
+  /* Summary */
+  .summary {
+    height: 50vh;
+    width: 90vw;
+  }
+  .summary
+  h1 {
+    text-align: center;
+    font-size: 22px;;
+  }
+  /* Info Box Mobile */
+  .info-box {
+    height: 50px;
+  }
+  .info-box
+  img {
+    height: 22px;
+  }
+  .info-box 
+  h2 {
+    font-size: 16px;
+  }
+  .info-box 
+  p {
+    font-size: 16px;
+  }
+  .summary button {
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 70vw;
+  }
+}
