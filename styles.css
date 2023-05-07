@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+:root {
+    /* Primary Colours */
+    --light-red: hsl(0, 100%, 67%);
+    --bg-light-red: hsl(0, 100%, 96%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --bg-orangey-yellow: hsl(39, 100%, 96%);
+    --green-teal: hsl(166, 100%, 37%);
+    --bg-green-teal: hsl(166, 100%, 96%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --bg-cobalt-blue: hsl(234, 85%, 96%);
+
+    /* Gradients */
+    --bg-slate-blue: hsl(252, 100%, 67%);
+    --bg-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --grey-blue: hsl(224, 30%, 27%);
+
+    /* Typography */
+    --main-font: 'Hanken Grotesk', sans-serif;
+    --sub-font: 'Bebas Neue', cursive;
+    --aux-font: 'Bangers', cursive;
+}
+
+html,
+body,
+section,
+div,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--main-font);
+}
+
+main {
+    max-width: 600px;
+    display: flex;
+    box-shadow: 5px 5px 5px var(--bg-cobalt-blue);
+    border-radius: 20px;
+}
+
+/* Results */
+
+.result {
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 380px;
+    width: 280px;
+    background: linear-gradient(var(--bg-slate-blue) 00%, var(--bg-royal-blue) 100%);
+    border-radius: 6%;
+}
+
+.result h1 {
+    color: var(--light-lavender);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: linear-gradient(var(--violet-blue) 0%, var(--persian-blue) 100%);
+}
+
+article h2 {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-size: 54px;
+}
+
+article p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--light-lavender);
+    opacity: 0.4
+}
+
+.result-info {
+    width: 190px;
+    margin: 0 auto;
+}
+
+.result-info h3 {
+    font-size: 23px;
+    letter-spacing: 0.6px;
+    color: var(--white);
+    margin: 0 0 10px 0;
+}
+
+.result-info p {
+    font-size: 14px;
+    color: var(--light-lavender);
+    opacity: 0.9;
+}
+
+/* Summary */
+.summary {
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 380px;
+    width: 280px;
+    padding: 0px;
+    background: white;
+}
+
+.summary h1 {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 0 20px;
+    color: var(--grey-blue);
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    height: 45px;
+    width: 80%;
+    padding: 0 12px;
+    border-radius: 6px;
+    background: white;
+}
+.info-box
+img {
+    height: 16px
+}
+.info-box
+h2 {
+    margin-left: -90px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.info-box
+p {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--grey-blue);
+}
+.info-box span {
+    color: var(--grey-blue);
+    opacity: 0.4;
+}
+.summary button {
+    height: 43px;
+    width: 200px;
+    color: var(--white);
+    background: var(--grey-blue);
+    border: 1px solid navy;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.reaction {
+    background: var(--bg-light-red);
+    color: var(--light-red);
+}
+.memory {
+    background: var(--bg-orangey-yellow);
+    color: var(--orangey-yellow);
+}
+.verbal {
+    background: var(--bg-green-teal);
+    color: var(--green-teal);
+}
+.visual {
+    background: var(--bg-cobalt-blue);
+    color: var(--cobalt-blue);
+
+}
+
+/* ### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
