@@ -227,7 +227,7 @@ footer h1 {
     padding: 10px;
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width: 768px) {
     body {
         display: flex;
         flex-direction: column;
@@ -249,15 +249,20 @@ footer h1 {
         border-top-right-radius: 0;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
-        height: 50vh;
+        height: 45vh;
         width: 100vw;
     }
-
+    article {
+        height: 160px;
+        width: 160px;
+    }
     .result h1 {
         font-size: 20px;
         margin: 0;
     }
-
+    .result article h2 {
+        font-size: 56px;
+    }
     .result article p {
         font-size: 16px;
     }
@@ -271,25 +276,27 @@ footer h1 {
     }
 
     .summary {
-        height: 50vh;
+        height: 55vh;
         width: 90vw;
+        gap: 0px;
     }
 
     .summary h1 {
-        text-align: center;
+        text-align: left;
         font-size: 22px;
+        margin: -10px 0 0 12%;
     }
 
     .info-box {
-        height: 50px;
+        height: 60px;
     }
 
     .info-box img {
-        height: 22px;
+        height: 24px;
     }
 
     .info-box h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .info-box p {
@@ -300,7 +307,65 @@ footer h1 {
         border-radius: 50px;
         font-size: 20px;
         font-weight: 500;
-        height: 50px;
+        height: 60px;
         width: 70vw;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* Results - Small Mobiles */
+    .result h1 {
+        font-size: 18px;
+    }
+    article {
+        height: 120px;
+        width: 120px;
+    }
+    .result 
+    article 
+    h2 {
+        font-size: 42px;
+    }
+    .result
+    article
+    p {
+        font-size: 14px;
+    }
+    .result-info 
+    h3 {
+        font-size: 20px;
+    }
+    .result-info
+    p {
+        width: 55vw;
+        font-size: 12px;
+    }
+
+    /* Summary - Small Mobiles */
+    .summary
+    h1 {
+        font-size: 16px;
+    }
+    .info-box {
+        height: 40px;
+    }
+    .info-box
+    img {
+        width: 18px;
+    }
+    .info-box 
+    h2 {
+        font-size: 14px;
+    }
+    .info-box 
+    p {
+        font-size: 14px;
+    }
+    .summary 
+    button {
+        height: 45px;
+        width: 200px;
+        font-size: 16px;
     }
 }
