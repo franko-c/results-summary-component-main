@@ -116,7 +116,6 @@ article p {
     display: inherit;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: center;
     height: 500px;
     width: 420px;
     padding: 0px;
@@ -124,10 +123,9 @@ article p {
 }
 
 .summary h1 {
-    text-align: left;
+    text-align: center;
     font-size: 26px;
     font-weight: 500;
-    text-align: center;
     padding: 5px 0;
     color: var(--grey-blue);
 }
@@ -252,12 +250,12 @@ footer h1 {
     }
 
     .result h1 {
-        font-size: 24px;
+        font-size: 20px;
         margin: 0;
     }
 
     .result article p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .result-info {
