@@ -2,13 +2,13 @@
 
 :root {
     --light-red: hsl(0, 100%, 67%);
-    --bg-light-red: hsl(0, 100%, 96%);
+    --bg-light-red: hsl(0, 100%, 98%);
     --orangey-yellow: hsl(39, 100%, 56%);
-    --bg-orangey-yellow: hsl(39, 100%, 96%);
+    --bg-orangey-yellow: hsl(39, 100%, 97%);
     --green-teal: hsl(166, 100%, 37%);
-    --bg-green-teal: hsl(166, 100%, 96%);
+    --bg-green-teal: hsl(166, 100%, 97%);
     --cobalt-blue: hsl(234, 85%, 45%);
-    --bg-cobalt-blue: hsl(234, 85%, 96%);
+    --bg-cobalt-blue: hsl(234, 85%, 98%);
     --bg-slate-blue: hsl(252, 100%, 67%);
     --bg-royal-blue: hsl(241, 81%, 54%);
     --violet-blue: hsla(256, 72%, 46%, 1);
@@ -55,15 +55,15 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 500px;
-    width: 420px;
+    height: 510px;
+    width: 368px;
     background: linear-gradient(var(--bg-slate-blue) 00%, var(--bg-royal-blue) 100%);
-    border-radius: 6%;
+    border-radius: 7%;
 }
 
 .result h1 {
     color: var(--light-lavender);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -71,8 +71,8 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     margin: 0 auto;
     background: linear-gradient(var(--violet-blue) 0%, var(--persian-blue) 100%);
@@ -82,7 +82,7 @@ article h2 {
     margin: 0;
     padding: 0;
     color: var(--white);
-    font-size: 54px;
+    font-size: 68px;
 }
 
 article p {
@@ -100,33 +100,37 @@ article p {
 }
 
 .result-info h3 {
-    font-size: 26px;
-    letter-spacing: 0.6px;
+    font-size: 29px;
+    letter-spacing: 0.8px;
     color: var(--white);
     margin: 0 0 10px 0;
 }
 
 .result-info p {
-    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
     color: var(--light-lavender);
     opacity: 0.9;
+    width: 260px;
+    margin: 0 auto;
 }
 
 .summary {
     display: inherit;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 500px;
-    width: 420px;
+    height: 510px;
+    width: 368px;
     padding: 0px;
     background: var(--white);
 }
 
 .summary h1 {
-    text-align: center;
-    font-size: 26px;
+    text-align: left;
+    font-size: 24px;
     font-weight: 500;
-    padding: 5px 0;
+    padding: 0;
+    margin: 12px 0 0 40px;
     color: var(--grey-blue);
 }
 
@@ -134,11 +138,11 @@ article p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto 10px auto;
-    height: 64px;
-    width: 75%;
+    margin: 0 auto 15px auto;
+    height: 55px;
+    width: 70%;
     padding: 0 12px;
-    border-radius: 6px;
+    border-radius: 10px;
     background: white;
 }
 
@@ -149,11 +153,11 @@ article p {
 }
 
 .info-box img {
-    height: 30px;
+    height: 20px;
 }
 
 .info-box h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -169,15 +173,15 @@ article p {
 }
 
 .summary button {
-    height: 50px;
-    width: 240px;
+    height: 58px;
+    width: 290px;
     color: var(--white);
     background: var(--grey-blue);
     border: 1px solid navy;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 0 auto;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .summary button:hover {
